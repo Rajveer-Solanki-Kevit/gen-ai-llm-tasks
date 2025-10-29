@@ -1,0 +1,13 @@
+openai
+streamlit
+pandas
+langfuse
+python-dotenv
+chromadb
+langchain-community
+langchain-classic
+langchain-core
+langchain-text-splitters
+langchain-openai
+requests
+beautifulsoup4
