@@ -5,8 +5,8 @@ A small collection of example projects demonstrating Gen-AI / LLM tasks.
 This repository groups three independent example folders that each contain a focused sample project, requirements, and a small CLI or script entrypoint. Each folder has its own `README.md` with detailed setup and run instructions. The three subprojects are:
 
 - `CodeAgentTask/` — code generation and testing utilities (generator + tester).
-- `OpenAIAssistantTask/` — an assistant CLI and helper scripts for working with the OpenAI API.
-- `RAG-Task/` — a retrieval-augmented generation example and a small web/app entrypoint.
+- `OpenAIAssistantTask/` — an assistant CLI and streamlit web both for working with the OpenAI API.
+- `RAG-Task/` — a retrieval-augmented generation example and a small web entrypoint.
 
 ## Quick repository layout
 
@@ -14,8 +14,7 @@ This repository groups three independent example folders that each contain a foc
 CodeAgentTask/
 OpenAIAssistantTask/
 RAG-Task/
-README.md         # minimal file that already exists
-README_FULL.md    # this file (detailed repo overview)
+README.md         
 ```
 
 ## Getting started (recommended)
@@ -47,23 +46,12 @@ Repeat the same pattern for `OpenAIAssistantTask` and `RAG-Task` — each folder
 ## Notes and tips
 
 - Python: these projects assume Python 3.8+. Use the matching `python3.x` binary when creating venvs if needed.
-- Environment variables: copy `example.env` to `.env` and fill in secrets (e.g. `OPENAI_API_KEY`). Some scripts read `.env`; otherwise export variables in your shell.
-- System packages: if `pip install` fails for a dependency, you may need system packages such as `build-essential`, `libssl-dev`, `libffi-dev`, or `python3-dev` on Debian/Ubuntu.
+- Environment variables: copy `example.env` to `.env` and fill in secrets (e.g. `OPENAI_API_KEY`). Some scripts read `.env`; otherwise export variables in your shell using export.
 
 ## Where to find details
 
-- `CodeAgentTask/README.md` — setup, per-folder venv, generator/tester usage, tests.
+- `CodeAgentTask/README.md` — setup, per-folder venv, generator/tester usage.
 - `OpenAIAssistantTask/README.md` — assistant CLI, scraping helper, environment setup.
-- `RAG-Task/README.md` — RAG orchestration, running `app.py`, and env notes.
-
-## Contributing
-
-If you want me to: add run scripts (Makefile), lock the requirements (`pip freeze` -> `requirements-lock.txt`), or run installs/tests here and report errors, tell me which subproject(s) and I'll proceed.
-
-## License
-
-Check repository root or ask the owner for license details. If you'd like, I can add an SPDX header or a simple `MIT`/`Apache-2.0` template.
-
----
+- `RAG-Task/README.md` — RAG, running `app.py`, and env notes.
 
 Last updated: 2025-10-29

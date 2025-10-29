@@ -3,8 +3,8 @@
 This folder contains the Code Agent sample tasks and generator/tester utilities.
 
 ## Contents
-- `cli_agent.py` — CLI entry point for the agent (interactive CLI).
-- `main_task.py` — main orchestration script for the task.
+- `cli_agent.py` — CLI script for the agent (interactive CLI).
+- `main_task.py` — streamlit web application of agent.
 - `codegen/` — generator and tester utilities (`generator.py`, `tester.py`).
 - `requirements.txt` — Python dependencies for this module.
 - `example.env` — example environment variables (copy and fill in secrets/API keys as needed).
@@ -12,7 +12,6 @@ This folder contains the Code Agent sample tasks and generator/tester utilities.
 ---
 
 ## Prerequisites
-- Linux/macOS with Bash (these instructions assume bash).
 - Python 3.8+ (adjust if project requires a different minor version).
 - Git (to clone the repo if you haven't already).
 
@@ -62,45 +61,32 @@ Choose an entry point depending on what you want to do.
 - Run the CLI agent:
 
 ```bash
-python cli_agent.py
+python3 cli_agent.py
 ```
 
 - Run the main task/orchestrator:
 
 ```bash
-python main_task.py
+streamlit run main_task.py
 ```
 
 - Use generator/tester utilities (for development):
 
 ```bash
 # run generator
-python -m codegen.generator
+python3 -m codegen.generator
 # run tester
-python -m codegen.tester
+python3 -m codegen.tester
 ```
 
 If any script requires flags or options, run `--help` on the script to discover usage, for example:
 
 ```bash
-python cli_agent.py --help
+python3 cli_agent.py --help
 ```
-
-## Tests
-This folder contains test utilities. If you have `pytest` installed in the venv (should be in `requirements.txt` if used), run:
-
-```bash
-pytest -q
-```
-
-## Troubleshooting
-- If `pip install -r requirements.txt` fails with a compilation error, install system build deps (e.g., `build-essential`, `libssl-dev`, etc.), depending on the failing package.
-- If a script can't find environment variables, ensure you activated the venv and either copied `example.env` to `.env` or exported the variables in shell.
-- If Python version issues arise, create venv with the matching Python binary (e.g., `python3.10 -m venv .venv`).
 
 ## Notes
 - Keep virtual environments per-folder to avoid dependency collisions across the three tasks.
-- If you'd like, I can run a quick dependency check or produce a `requirements.lock`/`pip freeze` for reproducible installs.
 
 ---
 

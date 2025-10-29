@@ -4,15 +4,14 @@ This folder contains code for a Retrieval-Augmented Generation (RAG) example and
 
 ## Contents
 - `app.py` — likely a web app or service entrypoint (check whether it uses Flask/FastAPI).
-- `litellm_task.py` — a lightweight LLM wrapper or example usage.
-- `rag_task.py` — RAG-specific orchestration.
+- `litellm_task.py` — litellm/langfuse example usage.
+- `rag_task.py` — RAG-specific script.
 - `requirements.txt` — Python dependencies for this module.
 - `example.env` — example environment variables (copy and fill in secrets/API keys as needed).
 
 ---
 
 ## Prerequisites
-- Linux with Bash (these instructions assume bash).
 - Python 3.8+.
 - Git (if you need to clone the repository).
 
@@ -47,39 +46,28 @@ Depending on the intended entry point:
 - If `app.py` is a web app (Flask/FastAPI), run:
 
 ```bash
-python app.py
-# or if using flask CLI
-# FLASK_APP=app.py flask run
+python3 app.py 
 ```
 
-- Run RAG orchestration:
+- Run RAG script:
 
 ```bash
-python rag_task.py
+python3 rag_task.py
 ```
 
-- Run the lite LLM example:
+- Run the liteLLM example:
 
 ```bash
-python litellm_task.py
+python3 litellm_task.py
 ```
 
-If a script requires extra flags, run `--help` for usage:
+- Run the streamlit web app:
 
 ```bash
-python app.py --help
+streamlit run rag_task.py
 ```
 
 ## Notes about web apps
-If `app.py` starts a server, it will usually print the host/port. If needed, set environment variables like `HOST` and `PORT` in `.env` or via the shell.
-
-## Troubleshooting
-- If package installation fails with compilation errors, install system build tools (e.g., `sudo apt-get install build-essential libssl-dev libffi-dev python3-dev`) and re-run `pip install`.
-- If the app can't connect to a vector DB or external service, verify credentials in `.env` and network access.
-
-## Testing & Development
-- Add and run `pytest` tests if present.
-
----
+If `app.py` starts a server, it will usually print the host/port. If needed, set environment variables like `HOST` and `PORT` in `.env`.
 
 Last updated: 2025-10-29

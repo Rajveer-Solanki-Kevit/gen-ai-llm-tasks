@@ -3,16 +3,15 @@
 This folder contains a set of assistant helper scripts and a CLI for the OpenAI-based assistant tasks.
 
 ## Contents
-- `cli_assistant.py` — CLI entry for the assistant.
-- `main_task.py` — main orchestration or example runner.
-- `scraping_script.py` — a helper script to scrape or gather content (if used).
+- `cli_assistant.py` — CLI script for the assistant.
+- `main_task.py` — streamlit web application of assistant.
+- `scraping_script.py` — a helper script to scrape or gather content.
 - `requirements.txt` — Python dependencies for this module.
 - `example.env` — example environment variables (copy and fill in secrets/API keys as needed).
 
 ---
 
 ## Prerequisites
-- Linux/macOS with Bash (these instructions assume bash).
 - Python 3.8+.
 - Git (to clone the repo if necessary).
 
@@ -55,34 +54,26 @@ export LANGFUSE_PUBLIC_KEY="your_key_here"
 - CLI assistant (interactive):
 
 ```bash
-python cli_assistant.py
+python3 cli_assistant.py
 ```
 
 - Main task/orchestrator:
 
 ```bash
-python main_task.py
+streamlit run main_task.py
 ```
 
 - Scraping helper (if applicable):
 
 ```bash
-python scraping_script.py
+python3 scraping_script.py
 ```
 
 If any script supports flags, run `--help` to get usage details:
 
 ```bash
-python cli_assistant.py --help
+python3 cli_assistant.py --help
 ```
-
-## Tests / Development
-If you want to add tests or run quick checks, install `pytest` in the venv and run `pytest`.
-
-## Troubleshooting
-- If you get errors installing packages, look at the failing package and install any required system libs (e.g., `libssl-dev`, `build-essential`).
-- Ensure you activated the venv before running the scripts.
-- If the assistant relies on external APIs, verify network access and API key validity.
 
 ## Notes
 - Keep a separate venv per task folder to isolate dependencies.
