@@ -3,7 +3,7 @@
 This folder contains code for workflow+agents and langgraph example and related tasks.
 
 ## Contents
-- `app.py` — main script.
+- `...components/app.py` — main script of each individual component.
 - `requirements.txt` — Python dependencies for this module.
 - `example.env` — example environment variables (copy and fill in secrets/API keys as needed).
 
