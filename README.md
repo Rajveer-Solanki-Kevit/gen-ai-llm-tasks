@@ -7,6 +7,7 @@ This repository groups three independent example folders that each contain a foc
 - `CodeAgentTask/` — code generation and testing utilities (generator + tester).
 - `OpenAIAssistantTask/` — an assistant CLI and streamlit web both for working with the OpenAI API.
 - `RAG-Task/` — a retrieval-augmented generation example and a small web entrypoint.
+- `workflow+agents/` — langgraph workflow and agents demo.
 
 ## Quick repository layout
 
@@ -14,6 +15,7 @@ This repository groups three independent example folders that each contain a foc
 CodeAgentTask/
 OpenAIAssistantTask/
 RAG-Task/
+workflow+agents/
 README.md         
 ```
 
@@ -53,5 +55,6 @@ Repeat the same pattern for `OpenAIAssistantTask` and `RAG-Task` — each folder
 - `CodeAgentTask/README.md` — setup, per-folder venv, generator/tester usage.
 - `OpenAIAssistantTask/README.md` — assistant CLI, scraping helper, environment setup.
 - `RAG-Task/README.md` — RAG, running `app.py`, and env notes.
+- `workflow+agents/README.md` — RAG, running `app.py`, and env notes.
 
-Last updated: 2025-10-29
+Last updated: 2025-10-30
