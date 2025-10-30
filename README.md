@@ -55,6 +55,6 @@ Repeat the same pattern for `OpenAIAssistantTask` and `RAG-Task` — each folder
 - `CodeAgentTask/README.md` — setup, per-folder venv, generator/tester usage.
 - `OpenAIAssistantTask/README.md` — assistant CLI, scraping helper, environment setup.
 - `RAG-Task/README.md` — RAG, running `app.py`, and env notes.
-- `workflow+agents/README.md` — RAG, running `app.py`, and env notes.
+- `workflow+agents/README.md` — workflow agents and langgraph, run each component's `app.py`, and env notes.
 
 Last updated: 2025-10-30
