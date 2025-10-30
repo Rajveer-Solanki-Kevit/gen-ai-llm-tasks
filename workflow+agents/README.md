@@ -1,4 +1,4 @@
-# RAG-Task
+# Workflow+Agents - Langgraph
 
 This folder contains code for workflow+agents and langgraph example and related tasks.
 
